@@ -46,6 +46,7 @@
 			"-DSTM32F10X_MD",
 			"-Iinclude",
 			"-Iinclude/cm3",
+			"-Iinclude/default",
 			"-Idrivers/cm3"
 		],
 		"src_filter": [
