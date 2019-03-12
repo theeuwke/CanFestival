@@ -30,8 +30,8 @@
 			"*.sln"
 		]
 	},
-	"frameworks": "*",
-	"platforms": "*",
+	"frameworks": "stm32cube",
+	"platforms": "ststm32",
 	"examples": [
 		"[Ee]xamples/*.c",
 		"[Ee]xamples/*.h",
@@ -42,13 +42,15 @@
 	],
 	"build": {
 		"flags": [
-			"-DENABLE_SHARED",
+			"-fPIC",
+			"-DSTM32F10X_MD",
 			"-Iinclude",
-			"-Idrivers/cm4"
+			"-Iinclude/cm3",
+			"-Idrivers/cm3"
 		],
 		"src_filter": [
-			"+<src/>",
-			"+<drivers/cm3"
+			"+<src/*.c>",
+			"+<drivers/cm3/*.c>"
 		]
 	}
 }
