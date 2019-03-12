@@ -49,6 +49,6 @@
 		"src_filter": [
 			"+<src/>",
 			"+<drivers/cm3"
-		}
+		]
 	}
 }
